@@ -1,10 +1,10 @@
 <img src='https://github.com/Databricks-BR/genai_hackathon/raw/main/images/head_genai_hackathon.gif' width='800px'></img>
 
 
-# DATABRICKS Generative AI Hackathon 2024
+</br></br>
 
 
-## DATA E LOCAL
+### DATA E LOCAL
 
 a definir
 
