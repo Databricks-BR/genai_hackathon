@@ -6,8 +6,8 @@
 
 ## DATA E LOCAL
 
-a definir
-**Data:** 5 de junho de 2024 - das 8:30h às 18:00h 
+**Local:** a definir</br>
+**Data:** 5 de junho de 2024 - das 8:30h às 18:00h.</br>
 </br></br>
 
 ## SOBRE O EVENTO
