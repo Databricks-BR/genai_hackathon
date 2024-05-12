@@ -68,6 +68,26 @@ O Júri será composto 05 (cinco) por profissionais integrantes do ecossistema d
 
 </br></br>
 
+## TEMAS SUGERIDOS
+
+A Databricks trará para o evento Casos de Uso real de aplicação do Generative AI.
+Alguns desses casos foram sugeridos pelos próprios participantes do Hackathon.
+Para tornar viável a implementação no curto espaço de tempo do evento, a equipe da Databricks já trará aceleradores, isto é, 
+parte da codificação (Notebook com exemplos de código e algumas fontes de dados tratadas), dentro dos Temas abaixo:
+
+| # | Solução | Descrição | Indústria / Depat. |
+| -- | -- | -- | --:|
+| 01 | Assistente Jurídico para Reforma Tributária | Jurídico, Fiscal, Tributário |
+| 02 | Avaliação / Classificação de Contratos de Fornecedor | Jurídico, Contratos |
+| 03 | Avaliação de Laudos, Extração e Tabulação de Termos | Saúde |
+| 04 | Drug Adverse Event Detection | Farmacovigilância |
+| 05 | Assistente Médico | Saúde |
+
+Os participantes terão a liberdade de escolha de TEMAS (inclusive fora dos já citados).
+Porém a Databricks recomenda a escolha de algum Tema correlato que possa aproveitar os aceleradores que estão sendo disponibilizados.
+
+</br></br>
+
 ## TERMOS GERAIS 
 
 Os Organizadores se reservam, a qualquer momento, o direito de cancelar, suspender ou modificar qualquer item deste Regulamento. Os prêmios são pessoais e intransferíveis, não podendo ser trocados por dinheiro em espécie, vendidos ou transferidos a outras pessoas. O presente regulamento fica sujeito a modificações no decorrer do período, a critério da organização sempre que se faça necessário ajustes, com comunicado a todos que estiverem participando da maratona. As empresas organizadoras e patrocinadoras concordam e aceitam, expressamente, por intermédio do presente, que nenhum direito detém sobre as ideias, programas e customizações desenvolvidos pelos participantes ou pelos grupos, por força deste regulamento, e que, dessa forma, não poderão utilizá-los para qualquer finalidade, sem o prévio e expresso consentimento. 
