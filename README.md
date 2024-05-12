@@ -75,8 +75,8 @@ Alguns desses casos foram sugeridos pelos próprios participantes do Hackathon.
 Para tornar viável a implementação no curto espaço de tempo do evento, a equipe da Databricks já trará aceleradores, isto é, 
 parte da codificação (Notebook com exemplos de código e algumas fontes de dados tratadas), dentro dos Temas abaixo:
 
-| # | Solução | Descrição | Indústria / Depat. |
-| -- | -- | -- | --:|
+| # | Solução |  Indústria / Departamento |
+| -- | -- | -- |
 | 01 | Assistente Jurídico para Reforma Tributária | Jurídico, Fiscal, Tributário |
 | 02 | Avaliação / Classificação de Contratos de Fornecedor | Jurídico, Contratos |
 | 03 | Avaliação de Laudos, Extração e Tabulação de Termos | Saúde |
