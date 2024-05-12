@@ -30,8 +30,10 @@ O Hackathon da DATABRICKS tem por objeto promover o conhecimento, integração e
 ## O QUE ESPERAR
 
 * **Fundação**: discutiremos componentes fundamentais de uma arquitetura de dados que permita a criação de modelos de AI e ML.
-* **Desafios Práticos**: Enfrente problemas reais e explore soluções criativas em IA.
+* **Desafios Práticos**: Enfrente problemas reais e explore soluções criativas em GenAI.
 * **Networking**: Conecte-se com outros profissionais e líderes de Dados & AI.
+* **Formação de uma Comunidade**: Oportunidade de criar grupos de discussão e troca de conhecimento.
+* **Base de Conhecimento**:  Criação de materiais de apoio (códigos fonte) para alavancar novas iniciativas em GenAI.
 * **Ganhe brindes** à medida que você colabora e avança no seu projeto. 
 </br></br>
   
