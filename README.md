@@ -83,6 +83,7 @@ parte da codificação (Notebook com exemplos de código e algumas fontes de dad
 | 04 | Drug Adverse Event Detection | Farmacovigilância |
 | 05 | Assistente Médico | Saúde |
 
+##### Observação:
 Os participantes terão a liberdade de escolha de TEMAS (inclusive fora dos já citados).
 Porém a Databricks recomenda a escolha de algum Tema correlato que possa aproveitar os aceleradores que estão sendo disponibilizados.
 
