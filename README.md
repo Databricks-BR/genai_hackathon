@@ -33,7 +33,7 @@ O Hackathon da DATABRICKS tem por objeto promover o conhecimento, integração e
 * **Desafios Práticos**: Enfrente problemas reais e explore soluções criativas em IA.
 * **Networking**: Conecte-se com outros profissionais e líderes de Dados & AI.
 * **Ganhe brindes** à medida que você colabora e avança no seu projeto. 
-
+</br></br>
   
 ## FORMAÇÃO DOS GRUPOS OU EQUIPES 
 
@@ -46,15 +46,24 @@ Essa etapa irá acontecer a partir das 15h00 do dia ..........
 
 Os “pitchs” serão ao vivo e terão duração máxima de 3 minutos para apresentação e 2 minutos de perguntas e respostas do júri.
 
-O Júri será composto 03 (três) por profissionais integrantes do ecossistema de inovação, tecnologia e sustentabilidade.
+O Júri será composto 05 (cinco) por profissionais integrantes do ecossistema de inovação, tecnologia e sustentabilidade.
+</br></br>
 
-São itens de análise nos pitches e entregáveis:
+## CRITÉRIOS DE AVALIAÇÃO
 
-* (1) Aderência ao tema;
-* (2) Inovação e originalidade;
-* (3) Apelo e impacto social;
-* (4) Aplicabilidade;
-* (5) Potencial de escala.
+| # | ITEM | Descrição | Pontuação |
+| -- | -- | -- | --:|
+| 01 | Contexto | Descrever o cenário ou problema atual | 02 pontos |
+| 02 | Propósito | Descrever qual a proposta de Solução | 02 pontos |
+| 03 | Arquitetura | Descrever como será implementado a solução | 03 pontos |
+| 04 | Referências | Documentar todas as fontes de referência | 02 pontos |
+| 05 | Execução | Demonstrar os resultados da execução do Notebook funcionando | 10 pontos |
+| 06 | Criatividade | Avaliação da Inovação e originalidade da solução e da proposta | 05 pontos |
+| 07 | Apelo e impacto | Avaliação do Impacto Social ou Empresarial - Benefícios | 10 pontos |
+| 08 | Aplicabilidade | Avaliação da viabilidade da solução nas empresas | 05 pontos |
+| 09 | Escalabilidade | Avaliação da ampliação do uso da solução em larga escala | 05 pontos |
+| 10 | Pitch | Avaliação da defesa e fundamentação da solução pelo Grupo | 20 pontos |
+
 </br></br>
 
 ## TERMOS GERAIS 
