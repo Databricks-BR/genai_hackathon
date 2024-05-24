@@ -24,6 +24,6 @@ Caso a feature não esteja aparecendo para você, um usuário com perfil de admi
 
 4 -  Atualize a página
 
-5 - Você verá na barra do menu esquerdo a nova opção **Genie Spaces** logo abaixo de **SQL Warehouse**
+5 - Você verá na barra do menu esquerdo a nova opção **Genie Spaces** logo abaixo de **SQL Warehouses**
 
 ![til](/images/Genie_EnablingGenie.gif)  
