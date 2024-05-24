@@ -8,7 +8,7 @@ A Genie Spaces está atualmente em public preview. Este caso de uso poderá ser 
 
 Para verificar se a Genie Spaces está habilitada, verifique a sessão **SQL** no menu esquerdo do seu workspace
 
-![img](images/Genie_enabled.png)
+![img](/images/Genie_enabled.png)
 
 # Habilitando a feature Genie Spaces
 
