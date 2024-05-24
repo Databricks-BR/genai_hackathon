@@ -22,7 +22,7 @@ Caso a feature não esteja aparecendo para você, um usuário com perfil de admi
 
 3 - Mova o toggle para **on**
 
-4 -  Atualize a página.
+4 -  Atualize a página
 
 5 - Você verá na barra do menu esquerdo a nova opção **Genie Spaces** logo abaixo de **SQL Warehouse**
 
