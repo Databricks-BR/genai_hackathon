@@ -1,4 +1,4 @@
-![til](images/head_genai_hackathon.gif)
+![til](/images/head_genai_hackathon.gif)
 
 # Genie Spaces
 
