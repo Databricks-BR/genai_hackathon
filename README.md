@@ -44,9 +44,7 @@ Os projetos para auxiliar no desenvolvimento de soluções de problemas serão o
 
 ## AVALIAÇÃO
 
-Essa etapa irá acontecer a partir das 15h00 do dia .......... 
-
-Os “pitchs” serão ao vivo e terão duração máxima de 3 minutos para apresentação e 2 minutos de perguntas e respostas do júri.
+Os “pitchs” serão ao vivo e terão duração máxima de 5 minutos para apresentação e 2 minutos de perguntas e respostas do júri.
 
 O Júri será composto 05 (cinco) por profissionais integrantes do ecossistema de inovação, tecnologia e sustentabilidade.
 </br></br>
