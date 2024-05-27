@@ -22,20 +22,19 @@ O Hackathon da DATABRICKS tem por objeto promover o conhecimento, integração e
 
 ## AGENDA
 
-
 | Horário |  Agenda | Atividades |
 | -- | -- | -- |
-| 08:30 - 09:00 | Welcome Coffee |  Espaço para conhecer os participantes e começar a troca de ideias |
-| 09:00 - 09:30 | Palestra de Abertura | Boas-vindas e introdução aos objetivos do hackathon. |
-| 09:30 - 10:30 | Gen AI e Databricks | Apresentação detalhada sobre os conceitos de GenAi e a plataforma Databricks. |
-| 10:30 - 11:00 | Intervalo para Café | Networking e momento para Formação dos Grupos |
-| 11:00 - 12:00 | Material do Hackathon | Apresentação das Regras e do material / aceleradores do Hackathon |
-| 12:00 - 13:00 | Almoço no Hilton | Almoço com os participantes e oportunidade de troca de ideias |
-| 13:00 - 15:00 | Desenvolvimento do Projeto | As equipes vão trabalhar em seus projetos de Gen AI usando Databricks. |
-| 15:00 - 15:15 | Intervalo da Tarde | Uma breve pausa para se refrescar e voltar aos trabalhos. |
-| 15:15 - 16:40 | Finalização do Projeto | Finalização e Acabamentos |
-| 16:40 - 17:40 | Pitch | Cada grupo terá 5 min para demonstrar sua solução |
-| 17:40 - 18:00 | Premiações, Feedback e Anúncio dos vencedores |
+| 08:30  | Welcome Coffee |  Espaço para conhecer os participantes e começar a troca de ideias |
+| 09:00 | Palestra de Abertura | Boas-vindas e introdução aos objetivos do hackathon. |
+| 09:30 | Gen AI e Databricks | Apresentação detalhada sobre os conceitos de GenAi e a plataforma Databricks. |
+| 10:30 | Intervalo para Café | Networking e momento para Formação dos Grupos |
+| 11:00 | Material Hackathon | Apresentação das Regras e do material / aceleradores do Hackathon |
+| 12:00 | Almoço no Hilton | Almoço com os participantes e oportunidade de troca de ideias |
+| 13:00 | Desenvolvimento do Projeto | As equipes vão trabalhar em seus projetos de Gen AI usando Databricks. |
+| 15:00 | Intervalo da Tarde | Uma breve pausa para se refrescar e voltar aos trabalhos. |
+| 15:15 | Finalização do Projeto | Finalização e Acabamentos |
+| 16:40 | Pitch | Cada grupo terá 5 min para demonstrar sua solução |
+| 17:40 | Premiações | Feedback e Anúncio dos vencedores |
 
 
 </br></br>
