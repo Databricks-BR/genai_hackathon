@@ -73,7 +73,7 @@ O Júri será composto 05 (cinco) por profissionais integrantes do ecossistema d
 | 06 | Criatividade | Avaliação da Inovação e originalidade da solução e da proposta | 05 pontos |
 | 07 | Apelo e impacto | Avaliação do Impacto Social ou Empresarial - Benefícios | 10 pontos |
 | 08 | Aplicabilidade | Avaliação da viabilidade da solução nas empresas | 05 pontos |
-| 09 | Escalabilidade | Avaliação da ampliação do uso da solução em larga escala | 05 pontos |
+| 09 | Complexidade | Nível de dificuldade / esforço gasto na solução | 05 pontos |
 | 10 | Pitch | Avaliação da defesa e fundamentação da solução pelo Grupo | 20 pontos |
 
 </br></br>
