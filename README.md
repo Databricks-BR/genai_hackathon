@@ -6,9 +6,10 @@
 
 ## DATA E LOCAL
 
-**Local:** Hilton São Paulo Morumbi</br>
-**Endereço:** Av. das Nações Unidas, 12.901, Torre Leste, Brooklin Novo, Sala Morumbi C, no térreo</br>
-**Data:** 5 de junho de 2024 - das 8:30h às 18:00h.</br>
+**Local:** Hilton São Paulo Morumbi</br></br>
+**Endereço:** Av. das Nações Unidas, 12.901, Torre Leste, Brooklin Novo, Sala Morumbi C, no térreo</br></br>
+**Data:** 5 de junho de 2024 </br></br>
+**Horário:** das 8:30h às 18:00h.
 </br></br>
 
 ## SOBRE O EVENTO
@@ -136,7 +137,7 @@ Os grupos participantes serão avaliados pela equipe de profissionais da DATABRI
 
 ## CONCESSÃO DE LICENÇA DE USO
 
-Sujeito aos termos e condições de esta Licença (Apache License 2.0), cada participante desse evento de Gen AI HACHATHON, concede a comunidade uma licença perpétua, mundial, não exclusivo, gratuito, isento de royalties, irrevogável licença de direitos autorais para reproduzir, preparar Trabalhos Derivados de, exibir publicamente, executar publicamente, sublicenciar e distribuir a Obra e tais Obras Derivadas na forma de Fonte ou Objeto.
+Sujeito aos termos e condições desta Licença (Apache License 2.0), cada participante desse evento de Gen AI HACHATHON, concede a comunidade uma licença perpétua, mundial, não exclusivo, gratuito, isento de royalties, irrevogável licença de direitos autorais para reproduzir, preparar Trabalhos Derivados de, exibir publicamente, executar publicamente, sublicenciar e distribuir a Obra e tais Obras Derivadas na forma de Fonte ou Objeto.
 </br></br>
 
 ## TERMOS GERAIS 
