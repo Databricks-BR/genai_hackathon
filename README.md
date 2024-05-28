@@ -99,6 +99,25 @@ Porém a Databricks recomenda a escolha de algum Tema correlato que possa aprove
 
 </br></br>
 
+## ENTREGA DAS SOLUÇÕES
+
+No encerramento da fase de construção da solução, que ocorrerá por volta das 16:30h do dia do evento do Hackathon, CADA grupo participante, entregará o código-fonte desenvolvido no notebook Databricks, no formato DBC.
+</br>
+Esse arquivo deverá ser enviado, nesse mesmo horário, a equipe técnica presente no evento, que fará a publicação dessa solução no repositório público do Hackathon.
+</br></br>
+##### Para exportar o arquivo:
+* Entre no código do notebook no Databricks
+* Menu:  FILE >> Export >> DBC Archive
+* Renomei o Arquivo para o número do seu Grupo:  "GRUPO01-nome_da_solucao.DBC"
+
+</br></br>
+
+
+## CONCESSÃO DE LICENÇA DE USO
+
+Sujeito aos termos e condições de esta Licença (Apache License 2.0), cada participante desse evento de Gen AI HACHATHON, concede a comunidade uma licença perpétua, mundial, não exclusivo, gratuito, isento de royalties, irrevogável licença de direitos autorais para reproduzir, preparar Trabalhos Derivados de, exibir publicamente, executar publicamente, sublicenciar e distribuir a Obra e tais Obras Derivadas na forma de Fonte ou Objeto.
+</br></br>
+
 ## TERMOS GERAIS 
 
 Os Organizadores se reservam, a qualquer momento, o direito de cancelar, suspender ou modificar qualquer item deste Regulamento. Os prêmios são pessoais e intransferíveis, não podendo ser trocados por dinheiro em espécie, vendidos ou transferidos a outras pessoas. O presente regulamento fica sujeito a modificações no decorrer do período, a critério da organização sempre que se faça necessário ajustes, com comunicado a todos que estiverem participando da maratona. As empresas organizadoras e patrocinadoras concordam e aceitam, expressamente, por intermédio do presente, que nenhum direito detém sobre as ideias, programas e customizações desenvolvidos pelos participantes ou pelos grupos, por força deste regulamento, e que, dessa forma, não poderão utilizá-los para qualquer finalidade, sem o prévio e expresso consentimento. 
