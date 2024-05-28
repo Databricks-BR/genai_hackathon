@@ -1,4 +1,118 @@
 # Databricks notebook source
+# MAGIC %md
+# MAGIC <img src="https://raw.githubusercontent.com/Databricks-BR/genai_hackathon/main/images/head_genai_hackathon.gif" width="700px">
+
+# COMMAND ----------
+
+# MAGIC %md
+# MAGIC <img src="https://raw.githubusercontent.com/Databricks-BR/genai_hackathon/main/images/head_titulo.png" width="900px">
+
+# COMMAND ----------
+
+# MAGIC %md
+# MAGIC ## Título:  .......   < nome da sua Solução >
+# MAGIC
+# MAGIC | ITEM | DESCRIÇÃO |
+# MAGIC | -- | -- |
+# MAGIC | Indústria: | Saúde / Financeira / Varejo / ... |
+# MAGIC | Departamento: | Comercial / Marketing / Jurídico / Contratos / Clínica Médica / ... |
+# MAGIC | Tipo de Solução: | Assistente GenAI / Extrator de Termos / Gerador de Conteúdo / Sumarizador / Classificação de Texto |
+
+# COMMAND ----------
+
+# MAGIC %md
+# MAGIC %md
+# MAGIC <img src="https://raw.githubusercontent.com/Databricks-BR/genai_hackathon/main/images/head_grupo.png" width="900px">
+
+# COMMAND ----------
+
+# MAGIC %md
+# MAGIC
+# MAGIC ### GRUPO 01 - <Nome do Grupo>
+# MAGIC
+# MAGIC | # | Nome do Integrante | Empresa | e-mail |
+# MAGIC | -- | -- | -- | -- |
+# MAGIC | 1 | nome | empresa | e-mail |
+# MAGIC | 2 | nome | empresa | e-mail |
+# MAGIC | 3 | nome | empresa | e-mail |
+# MAGIC | 4 | nome | empresa | e-mail |
+# MAGIC | 5 | nome | empresa | e-mail | 
+
+# COMMAND ----------
+
+# MAGIC %md
+# MAGIC <img src="https://raw.githubusercontent.com/Databricks-BR/genai_hackathon/main/images/head_contexto.png" width="900px">
+
+# COMMAND ----------
+
+# MAGIC %md
+# MAGIC #### Cenário Atual
+# MAGIC
+# MAGIC descreva ...
+# MAGIC </br></br>
+# MAGIC
+# MAGIC #### Dores / Necessidades do Negócio
+# MAGIC
+# MAGIC descreva ...
+# MAGIC </br></br>
+# MAGIC
+
+# COMMAND ----------
+
+# MAGIC %md
+# MAGIC <img src="https://raw.githubusercontent.com/Databricks-BR/genai_hackathon/main/images/head_proposito.png" width="900px">
+
+# COMMAND ----------
+
+# MAGIC %md
+# MAGIC #### Objetivo da Solução Proposta
+# MAGIC
+# MAGIC Descreva como pretente resolver o problema....
+# MAGIC
+# MAGIC </br></br>
+# MAGIC
+# MAGIC #### Benefícios
+# MAGIC
+# MAGIC Descreva que benéficios, que melhorias, impactos... a solução trará pra empresa e/ou sociedade ...
+# MAGIC </br></br>
+# MAGIC
+
+# COMMAND ----------
+
+# MAGIC %md
+# MAGIC <img src="https://raw.githubusercontent.com/Databricks-BR/genai_hackathon/main/images/head_arquitetura.png" width="900px">
+# MAGIC
+
+# COMMAND ----------
+
+# MAGIC %md
+# MAGIC ### Arquitetura
+# MAGIC
+# MAGIC * Provedor Cloud:   Azure / AWS / GCP
+# MAGIC * Cluster / DB Runtime:   ____
+# MAGIC * Bibliotecas utilizadas: _____
+# MAGIC
+# MAGIC ### Técnicas Utilizadas
+
+# COMMAND ----------
+
+# MAGIC %md
+# MAGIC <img src="https://raw.githubusercontent.com/Databricks-BR/genai_hackathon/main/images/head_referencias.png" width="900px">
+# MAGIC
+
+# COMMAND ----------
+
+# MAGIC %md
+# MAGIC #### Referências:
+# MAGIC * [Introdução ao DBRX LLM foundation model Databricks](https://www.databricks.com/blog/introducing-dbrx-new-state-art-open-llm)
+# MAGIC * [Foundation LLM Models APIs](https://docs.databricks.com/en/machine-learning/foundation-models/index.html#pay-per-token-foundation-model-apis)
+# MAGIC * outros ...
+# MAGIC * outros ...
+# MAGIC * outros ...
+# MAGIC * outros ...
+
+# COMMAND ----------
+
 # MAGIC %md-sandbox
 # MAGIC
 # MAGIC # Preparação dos dados para nosso Chatbot com RAG
