@@ -21,7 +21,7 @@ Um **Account Admin** deve executar os passos abaixo:
 1. Ir para `Feature Enablement`
 1. Ler e aceitar os termos de utilização no banner que aparecerá no topo da página
 
-*NOTA: caso o banner não apareça, significa que os termos já foram aceitados.*
+*NOTA: caso o banner não apareça, significa que os termos já foram aceitos.*
 
 # Cluster
 
