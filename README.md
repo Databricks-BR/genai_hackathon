@@ -6,10 +6,10 @@
 
 ## DATA E LOCAL
 
-**Local:** Hilton São Paulo Morumbi</br></br>
-**Endereço:** Av. das Nações Unidas, 12.901, Torre Leste, Brooklin Novo, Sala Morumbi C, no térreo</br></br>
-**Data:** 5 de junho de 2024 </br></br>
-**Horário:** das 8:30h às 18:00h.
+* **Local:** Hilton São Paulo Morumbi</br>
+* **Endereço:** Av. das Nações Unidas, 12.901, Torre Leste, Brooklin Novo, Sala Morumbi C, no térreo</br>
+* **Data:** 5 de junho de 2024 </br>
+* **Horário:** das 8:30h às 18:00h.
 </br></br>
 
 ## SOBRE O EVENTO
