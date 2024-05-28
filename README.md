@@ -112,6 +112,27 @@ Esse arquivo deverá ser enviado, nesse mesmo horário, a equipe técnica presen
 
 </br></br>
 
+## MENTORES E PALESTRANTES
+
+<img src='https://github.com/Databricks-BR/genai_hackathon/raw/main/images/mentores.gif' width='800px'></img>
+
+Durante o evento, principalmente durante a construção e desenvolvimento da solução, os participantes poderão contar com o apoio técnico do time de especialistas da DATABRICKS.
+
+</br></br>
+
+## JURI
+
+<img src='https://github.com/Databricks-BR/genai_hackathon/raw/main/images/juri.gif' width='800px'></img>
+
+Os grupos participantes serão avaliados pela equipe de profissionais da DATABRICKS durante a fase do PITCH.
+
+</br></br>
+
+## PREMIAÇÃO
+
+<img src='https://github.com/Databricks-BR/genai_hackathon/raw/main/images/brindes' width='800px'></img>
+
+</br></br>
 
 ## CONCESSÃO DE LICENÇA DE USO
 
