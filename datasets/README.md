@@ -1,6 +1,6 @@
 ## DATASETS
 
-Bases de Dados que podem ser utilizados no HACKATHON
+Bases de Dados que podem (opcionalmente) serem utilizadas no HACKATHON
 
 
 | arquivo | descrição | fonte de dados |
