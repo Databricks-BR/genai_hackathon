@@ -165,16 +165,7 @@
 -- MAGIC 1. Ao lado de `br-genai-hackathon`, clique em `Create catalog`
 -- MAGIC 1. Digite o nome `br-genai-hackathon` e clique em `Create`
 -- MAGIC
--- MAGIC <img src="https://www.databricks.com/en-website-assets/static/ddac5f0f20296db7ed3c559cdb727876/12369.png" style="float: right; padding-left: 10px">
-
--- COMMAND ----------
-
--- MAGIC %md Aqui, definimos o banco de dados que utilizaremos
-
--- COMMAND ----------
-
--- Substitua as variáveis abaixo por seu catálogo e banco de dados
-USE <catalogo>.<database>
+-- MAGIC <img src="https://github.com/Databricks-BR/genai_hackathon/blob/main/images/sharing.gif?raw=true">
 
 -- COMMAND ----------
 
@@ -182,7 +173,7 @@ USE <catalogo>.<database>
 
 -- COMMAND ----------
 
-SELECT * FROM clinical_notes LIMIT 100
+SELECT * FROM `br-genai-hackathon`.hls_ade.clinical_notes_pt LIMIT 100
 
 -- COMMAND ----------
 
@@ -190,7 +181,7 @@ SELECT * FROM clinical_notes LIMIT 100
 
 -- COMMAND ----------
 
-select is_ADE, count(*) as from clinical_notes group by is_ADE
+select is_ADE, count(*) as from `br-genai-hackathon`.hls_ade.clinical_notes_pt group by is_ADE
 
 -- COMMAND ----------
 
@@ -269,73 +260,6 @@ select is_ADE, count(*) as from clinical_notes group by is_ADE
 
 -- COMMAND ----------
 
--- MAGIC %md ## Tradução das notas
--- MAGIC
--- MAGIC Nosso conjunto de dados original está em Inglês. Infelizmente, conjuntos de dados médicos/clínicos em Português são muito raros e, usualmente, são proprietários. Por isso, aproveitaremos os modelos de IA Generativa disponíveis no Databricks para traduzir esses textos.
-
--- COMMAND ----------
-
--- MAGIC %md ### Teste de tradução
--- MAGIC
--- MAGIC Primeiro, para simplificar a consulta aos modelos de Gen AI, vamos utilizar a função nativa **`AI_QUERY`**. Esta permite enviar consultas para o modelo fundacional desejado. No nosso caso, iremos solicitar a tradução ao **`DBRX`**.
--- MAGIC
--- MAGIC Vamos fazer um teste abaixo
-
--- COMMAND ----------
-
-SELECT AI_QUERY('databricks-dbrx-instruct',
-  'Traduza para Português o texto a seguir (não adicione nenhum texto além da tradução):
-   CONCLUSION: The administration of tissue plasminogen activator was responsible for the large extent of hemorrhage and should be considered in the differential diagnosis of hemorrhagic choroidal detachment.') AS text
-
--- COMMAND ----------
-
--- MAGIC %md ### Prepara tradução
--- MAGIC
--- MAGIC Agora, definiremos uma função para que qualquer pessoa consiga traduzir facilmente qualquer documento para Português.
-
--- COMMAND ----------
-
-CREATE OR REPLACE FUNCTION translate_to_pt(text STRING)
-    RETURNS STRING
-    RETURN AI_QUERY(
-        'databricks-dbrx-instruct',
-        CONCAT(
-            'Traduza para Português o texto a seguir (não adicione nenhum texto além da tradução): ', text
-        )
-    );
-
--- COMMAND ----------
-
--- MAGIC %md E podemos testar nossa função
-
--- COMMAND ----------
-
-SELECT translate_to_pt('''
-  CONCLUSION: The administration of tissue plasminogen activator was responsible for the large extent of hemorrhage and should be considered in the differential diagnosis of hemorrhagic choroidal detachment.
-''')
-
--- COMMAND ----------
-
--- MAGIC %md
--- MAGIC ### Traduz todas as notas
--- MAGIC
--- MAGIC Vamos aplicar esta função em todo o nosso conjunto de dados original para gerar uma versão em Português
-
--- COMMAND ----------
-
-CREATE OR REPLACE TABLE clinical_notes_pt AS
-SELECT id, translate_to_pt(text) AS text, is_ADE FROM clinical_notes
-
--- COMMAND ----------
-
--- MAGIC %md E podemos visualizar o conjunto de dados resultante
-
--- COMMAND ----------
-
-SELECT * FROM clinical_notes_pt LIMIT 100
-
--- COMMAND ----------
-
 -- MAGIC %md ## Classificação de notas e extração entidades
 -- MAGIC
 -- MAGIC Agora, vamos tentar identificar a presença de ADEs nos textos utilizando novamente a função `AI_QUERY` e outro modelo fundacional, o `LLAMA 3`.
@@ -394,7 +318,7 @@ SELECT analyze_clinical_notes('''
 
 CREATE OR REPLACE TABLE summaries AS
 SELECT id, text, is_ADE, s.* FROM (
-  SELECT *, analyze_clinical_notes(text) AS s FROM clinical_notes_pt)
+  SELECT *, analyze_clinical_notes(text) AS s FROM `br-genai-hackathon`.hls_ade.clinical_notes_pt)
 
 -- COMMAND ----------
 
