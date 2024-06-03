@@ -168,30 +168,35 @@
 # COMMAND ----------
 
 # MAGIC %md-sandbox
-# MAGIC ## 1. Download do sitemap da documentação da Databricks e páginas
+# MAGIC ## 1. Conjunto de dados da documentação da Databricks
 # MAGIC
 # MAGIC <img src="https://github.com/databricks-demos/dbdemos-resources/blob/main/images/product/chatbot-rag/llm-rag-data-prep-1.png?raw=true" style="float: right; width: 600px; margin-left: 10px">
 # MAGIC
-# MAGIC Primeiro, vamos criar nosso conjunto de dados bruto como uma tabela Delta Lake.
+# MAGIC Primeiro, vamos acessar nosso conjunto de dados bruto como uma tabela Delta Lake.
 # MAGIC
-# MAGIC Para esta demonstração, iremos baixar diretamente algumas páginas de documentação do docs.databricks.com/pt e salvar o conteúdo HTML.
+# MAGIC Para esta demonstração, já baixamos as páginas da documentação do docs.databricks.com/pt e salvamos o conteúdo HTML.
 # MAGIC
-# MAGIC Aqui estão os principais passos:
-# MAGIC
-# MAGIC * Executar um script para extrair as URLs das páginas do arquivo sitemap.xml
-# MAGIC * Baixar as páginas da web
-# MAGIC * Usar o BeautifulSoup para extrair o conteúdo do artigo
-# MAGIC * Salvar os resultados HTML em uma tabela Delta Lake
+# MAGIC Agora, vamos utilizar o Delta Sharing para acessar esses dados.
 
 # COMMAND ----------
 
-if not table_exists("raw_documentation") or spark.table("raw_documentation").isEmpty():
-    # Download das páginas da documentação para um Spark DataFrame
-    doc_articles = download_databricks_documentation_articles()
-    # Escreve para a tabela raw_documentation
-    doc_articles.write.mode('overwrite').saveAsTable("raw_documentation")
+# MAGIC %md-sandbox
+# MAGIC **<font color="red">ANTES DE CONTINUAR, SIGA AS INSTRUÇÕES ABAIXO.</font>**
+# MAGIC
+# MAGIC ## Configure o acesso ao dataset
+# MAGIC
+# MAGIC 1. Peça a um dos intrutores para liberar o acesso ao dataset
+# MAGIC 1. Acesse `Catalog` no menu principal à esquerda
+# MAGIC 1. Acesse `Delta Sharing` > `Shared with me`
+# MAGIC 1. Procure por `databricks-field-eng`
+# MAGIC 1. Ao lado de `br-genai-hackathon`, clique em `Create catalog`
+# MAGIC 1. Digite o nome `br-genai-hackathon` e clique em `Create`
+# MAGIC
+# MAGIC <img src="https://github.com/Databricks-BR/genai_hackathon/blob/main/images/sharing.gif?raw=true">
 
-display(spark.table("raw_documentation").limit(10))
+# COMMAND ----------
+
+# MAGIC %sql SELECT * FROM `br-genai-hackathon`.chatbot3.raw_documentation LIMIT 100
 
 # COMMAND ----------
 
@@ -271,7 +276,7 @@ def split_html_on_h2(html, min_chunk_size = 20, max_chunk_size=500):
   return [c for c in chunks if len(tokenizer.encode(c)) > min_chunk_size]
  
 # Vamos avaliar a função de divisão dos trechos
-html = spark.table("raw_documentation").limit(1).collect()[0]['text']
+html = spark.table("`br-genai-hackathon`.chatbot3.raw_documentation").limit(1).collect()[0]['text']
 split_html_on_h2(html)
 
 # COMMAND ----------
@@ -300,7 +305,7 @@ split_html_on_h2(html)
 def parse_and_split(docs: pd.Series) -> pd.Series:
     return docs.apply(split_html_on_h2)
     
-(spark.table("raw_documentation")
+(spark.table("`br-genai-hackathon`.chatbot3.raw_documentation")
       .filter('text is not null')
       .withColumn('content', F.explode(parse_and_split('text')))
       .drop("text")
