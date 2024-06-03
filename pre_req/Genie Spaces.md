@@ -27,3 +27,10 @@ Caso a feature não esteja aparecendo para você, um usuário com perfil de admi
 5 - Você verá na barra do menu esquerdo a nova opção **Genie Spaces** logo abaixo de **SQL Warehouses**
 
 ![til](/images/Genie_EnablingGenie.gif)  
+
+#
+<picture>
+<img alt="Você precisará ter a permissão de "CREATE CATALOG" para poder executar seu notebbok durante o Hackaton" src="https://raw.githubusercontent.com/Databricks-BR/genai_hackathon/main/images/Warning.png">
+</picture>
+
+### Você precisará de permissão de "CREATE CATALOG" para executar o notebook durante o hackaton
