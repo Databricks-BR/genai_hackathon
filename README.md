@@ -33,7 +33,7 @@ O Hackathon da DATABRICKS tem por objeto promover o conhecimento, integração e
 | 12:00 | Almoço no Hilton | Almoço com os participantes e oportunidade de troca de ideias |
 | 13:00 | Desenvolvimento do Projeto | As equipes vão trabalhar em seus projetos de Gen AI usando Databricks. |
 | 15:00 | Intervalo da Tarde | Uma breve pausa para se refrescar e voltar aos trabalhos. |
-| 15:15 | Finalização do Projeto | Finalização e Acabamentos |
+| 15:15 | Continuação Desenvolvimento | Finalização e Acabamentos |
 | 16:40 | Pitch | Cada grupo terá 5 min para demonstrar sua solução |
 | 17:40 | Premiações | Feedback e Anúncio dos vencedores |
 
@@ -81,18 +81,28 @@ O Júri será composto 05 (cinco) por profissionais integrantes do ecossistema d
 
 ## TEMAS SUGERIDOS
 
-A Databricks trará para o evento Casos de Uso real de aplicação do Generative AI.
-Alguns desses casos foram sugeridos pelos próprios participantes do Hackathon.
-Para tornar viável a implementação no curto espaço de tempo do evento, a equipe da Databricks já trará aceleradores, isto é, 
-parte da codificação (Notebook com exemplos de código e algumas fontes de dados tratadas), dentro dos Temas abaixo:
+Para tornar viável a implementação no curto espaço de tempo de desenvolvimento da solução (3:30 horas), a equipe da Databricks já trará aceleradores, isto é, parte da codificação (Notebook com exemplos de código e algumas fontes de dados tratadas), com um Template que deverá ser seguido, pois no template terão os tópicos que serão julgados.   Não será necessário preparar nenhum outro material ou apresentação (PPT) para apresentar no pitch. As fundamentações da solução deverão ser colocadas no próprio notebook da Databricks.
+</br></br>
+Templates de código, de acordo com as técnicas:
 
-| # | Solução |  Indústria / Departamento |
-| -- | -- | -- |
-| 01 | Assistente Jurídico para Reforma Tributária | Jurídico, Fiscal, Tributário |
-| 02 | Avaliação / Classificação de Contratos de Fornecedor | Jurídico, Contratos |
-| 03 | Avaliação de Laudos, Extração e Tabulação de Termos | Saúde |
-| 04 | Drug Adverse Event Detection | Farmacovigilância |
-| 05 | Assistente Médico | Saúde |
+| # | Pasta |  Técnica | Complexidade |
+| -- | -- | -- | -- |
+| 01 | Genie | Genie spaces Data Room | bem simples |
+| 02 | sql_ai | Funções GEN AI usando linguagem SQL | fácil |
+| 03 | Chatbot RAG | Retrieval augmented generation | média/alta |
+| 04 | HuggingFace | Utilizando bibliotecas externas | alta |
+
+</br></br>
+Para quem ainda não tem nenhum ideia de aplicação de Generative AI, 
+a Databricks trará para o evento Casos de Uso real de aplicação:
+
+| # | Pasta |  Descrição Caso de Uso | Técnica |
+| -- | -- | -- | -- |
+| 05 | reforma_tributaria | Assistente Jurídico para Reforma Tributária | RAG |
+| 06 | contratos_ai | Avaliação / Classificação de Contratos de Fornecedor | SQL AI / outros |
+| 07 | saude_preventiva | Avaliação de Laudos, Saúde Preventiva | SQL AI / outros |
+| 08 | Eventos Adversos | Drug Adverse Event Detection | SQL AI / outros |
+
 
 ##### Observação:
 Os participantes terão a liberdade de escolha de TEMAS (inclusive fora dos já citados).
