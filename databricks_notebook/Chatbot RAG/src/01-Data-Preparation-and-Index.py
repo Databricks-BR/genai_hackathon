@@ -196,7 +196,7 @@
 
 # COMMAND ----------
 
-# MAGIC %sql SELECT * FROM `br-genai-hackathon`.chatbot3.raw_documentation LIMIT 100
+# MAGIC %sql SELECT * FROM `br-genai-hackathon`.chatbot.raw_documentation LIMIT 100
 
 # COMMAND ----------
 
@@ -276,7 +276,7 @@ def split_html_on_h2(html, min_chunk_size = 20, max_chunk_size=500):
   return [c for c in chunks if len(tokenizer.encode(c)) > min_chunk_size]
  
 # Vamos avaliar a função de divisão dos trechos
-html = spark.table("`br-genai-hackathon`.chatbot3.raw_documentation").limit(1).collect()[0]['text']
+html = spark.table("`br-genai-hackathon`.chatbot.raw_documentation").limit(1).collect()[0]['text']
 split_html_on_h2(html)
 
 # COMMAND ----------
@@ -305,7 +305,7 @@ split_html_on_h2(html)
 def parse_and_split(docs: pd.Series) -> pd.Series:
     return docs.apply(split_html_on_h2)
     
-(spark.table("`br-genai-hackathon`.chatbot3.raw_documentation")
+(spark.table("`br-genai-hackathon`.chatbot.raw_documentation")
       .filter('text is not null')
       .withColumn('content', F.explode(parse_and_split('text')))
       .drop("text")

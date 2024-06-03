@@ -173,7 +173,7 @@
 
 -- COMMAND ----------
 
-SELECT * FROM `br-genai-hackathon`.hls_ade.clinical_notes_pt LIMIT 100
+SELECT * FROM `br-genai-hackathon`.eventos_adversos.clinical_notes_pt LIMIT 100
 
 -- COMMAND ----------
 
@@ -181,7 +181,7 @@ SELECT * FROM `br-genai-hackathon`.hls_ade.clinical_notes_pt LIMIT 100
 
 -- COMMAND ----------
 
-select is_ADE, count(*) as from `br-genai-hackathon`.hls_ade.clinical_notes_pt group by is_ADE
+select is_ADE, count(*) as from `br-genai-hackathon`.eventos_adversos.clinical_notes_pt group by is_ADE
 
 -- COMMAND ----------
 
@@ -318,7 +318,7 @@ SELECT analyze_clinical_notes('''
 
 CREATE OR REPLACE TABLE summaries AS
 SELECT id, text, is_ADE, s.* FROM (
-  SELECT *, analyze_clinical_notes(text) AS s FROM `br-genai-hackathon`.hls_ade.clinical_notes_pt)
+  SELECT *, analyze_clinical_notes(text) AS s FROM `br-genai-hackathon`.eventos_adversos.clinical_notes_pt)
 
 -- COMMAND ----------
 
