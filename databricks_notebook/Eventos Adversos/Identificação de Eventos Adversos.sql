@@ -150,11 +150,28 @@
 
 -- COMMAND ----------
 
+-- MAGIC %md-sandbox
+-- MAGIC **<font color="red">ANTES DE CONTINUAR, SIGA AS INSTRUÇÕES ABAIXO.</font>**
+-- MAGIC
+-- MAGIC ## Configure o acesso ao dataset
+-- MAGIC
+-- MAGIC 1. Peça a um dos intrutores para liberar o acesso ao dataset
+-- MAGIC 1. Acesse `Catalog` no menu principal à esquerda
+-- MAGIC 1. Acesse `Delta Sharing` > `Shared with me`
+-- MAGIC 1. Procure por `databricks-field-eng`
+-- MAGIC 1. Ao lado de `br-genai-hackathon`, clique em `Create catalog`
+-- MAGIC 1. Digite o nome `br-genai-hackathon` e clique em `Create`
+-- MAGIC
+-- MAGIC <img src="https://www.databricks.com/en-website-assets/static/ddac5f0f20296db7ed3c559cdb727876/12369.png" style="float: right; padding-left: 10px">
+
+-- COMMAND ----------
+
 -- MAGIC %md Aqui, definimos o banco de dados que utilizaremos
 
 -- COMMAND ----------
 
-USE vr_demo.hls_ade
+-- Substitua as variáveis abaixo por seu catálogo e banco de dados
+USE <catalogo>.<database>
 
 -- COMMAND ----------
 
@@ -440,7 +457,7 @@ GROUP BY evento ORDER BY cnt DESC LIMIT 10
 
 -- COMMAND ----------
 
-SELECT droga, evento, count(*) AS cnt FROM (SELECT explode(drogas) AS droga, explode(eventos) AS evento FROM vr_demo.hls_ade.summaries)
+SELECT droga, evento, count(*) AS cnt FROM (SELECT explode(drogas) AS droga, explode(eventos) AS evento FROM summaries)
 GROUP BY ALL ORDER BY cnt DESC LIMIT 100
 
 -- COMMAND ----------
@@ -455,5 +472,5 @@ GROUP BY ALL ORDER BY cnt DESC LIMIT 100
 
 WITH 
   e AS (SELECT evento, count(*) AS cnt FROM (SELECT explode(eventos) AS evento FROM summaries) GROUP BY evento HAVING cnt > 2),
-  a AS (SELECT droga, evento, count(*) AS cnt FROM (SELECT explode(drogas) AS droga, explode(eventos) AS evento FROM vr_demo.hls_ade.summaries) GROUP BY ALL)
+  a AS (SELECT droga, evento, count(*) AS cnt FROM (SELECT explode(drogas) AS droga, explode(eventos) AS evento FROM summaries) GROUP BY ALL)
 SELECT a.droga, a.evento, a.cnt/e.cnt AS pct FROM a INNER JOIN e ON a.evento = e.evento ORDER BY pct DESC LIMIT 100
