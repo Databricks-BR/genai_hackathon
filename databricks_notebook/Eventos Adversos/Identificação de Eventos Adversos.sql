@@ -10,13 +10,13 @@
 -- COMMAND ----------
 
 -- MAGIC %md
--- MAGIC ## Título:  .......   < nome da sua Solução >
+-- MAGIC ## Título:  Identificação Eventos Adversos
 -- MAGIC
 -- MAGIC | ITEM | DESCRIÇÃO |
 -- MAGIC | -- | -- |
--- MAGIC | Indústria: | Saúde / Financeira / Varejo / ... |
--- MAGIC | Departamento: | Comercial / Marketing / Jurídico / Contratos / Clínica Médica / ... |
--- MAGIC | Tipo de Solução: | Assistente GenAI / Extrator de Termos / Gerador de Conteúdo / Sumarizador / Classificação de Texto |
+-- MAGIC | Indústria: | Saúde  |
+-- MAGIC | Departamento: | Clínica Médica / Farmacêutica |
+-- MAGIC | Tipo de Solução: | Assistente GenAI / Extrator de Termos / Classificação de Texto |
 
 -- COMMAND ----------
 
@@ -48,12 +48,15 @@
 -- MAGIC %md
 -- MAGIC #### Cenário Atual
 -- MAGIC
--- MAGIC descreva ...
+-- MAGIC Os eventos adversos a medicamentos (EAM) - **adverse drug events (ADEs)** - representam um problema clínico significativo na área da saúde, devido à crescente multimorbidade e complexidade do tratamento médico. Portanto, melhorar a segurança dos medicamentos foi definido como um desafio global para a segurança do paciente, com o objetivo de reduzir o nível de danos graves e evitáveis ​​relacionados aos medicamentos.
 -- MAGIC </br></br>
 -- MAGIC
 -- MAGIC #### Dores / Necessidades do Negócio
 -- MAGIC
--- MAGIC descreva ...
+-- MAGIC A fim de melhorar a segurança da medicação em pacientes hospitalizados, os hospitais precisam ter uma visão precisa e contínua sobre que tipo de EAM ocorre em seus pacientes internados, incluindo quais subpopulações apresentam alto risco de EAM. Essas informações são cruciais para obter uma melhor compreensão dos medicamentos, dos pacientes e dos processos clínicos que são mais passíveis de intervenções de segurança de medicamentos e em quais deles concentrar seus esforços.
+-- MAGIC </br></br>
+-- MAGIC Uma das principais barreiras para obter tal conhecimento é a falta de um sistema de monitoramento que possa detectar EAM de forma rotineira, rápida e em escala em pacientes hospitalizados. 
+-- MAGIC
 -- MAGIC </br></br>
 -- MAGIC
 
@@ -76,6 +79,27 @@
 -- MAGIC Descreva que benéficios, que melhorias, impactos... a solução trará pra empresa e/ou sociedade ...
 -- MAGIC </br></br>
 -- MAGIC
+
+-- COMMAND ----------
+
+-- MAGIC %md-sandbox
+-- MAGIC # Identificação de Eventos Adversos
+-- MAGIC
+-- MAGIC <img src="https://www.databricks.com/en-website-assets/static/ddac5f0f20296db7ed3c559cdb727876/12369.png" style="float: right; padding-left: 10px" width=600>
+-- MAGIC
+-- MAGIC Para garantir a segurança contínua dos medicamentos, as empresas farmacêuticas precisam monitorar e relatar eventos adversos (ADE) após o lançamento no mercado. 
+-- MAGIC
+-- MAGIC Isso é desafiador, dado que a maioria dos eventos adversos são capturados em textos não-estruturados como emails, chamadas telefônicas e publicações em redes sociais. 
+-- MAGIC
+-- MAGIC * Extraia facilmente eventos adversos de grandes volumes de dados textuais com NLP
+-- MAGIC * Classifique e correlacione automaticamente eventos adversos e entidades de drogas
+-- MAGIC * Use visualizações integradas para avaliar a frequência dos eventos
+-- MAGIC
+-- MAGIC Neste notebook demonstramos a extração, processamento e análise de eventos adversos de medicamentos a partir de uma coleção de 20.000 conversas do mundo real usando processamento de linguagem natural (NLP) com modelos de Inteligência Artificial Generativa (GenAI).
+-- MAGIC
+-- MAGIC Então, nós armazenamos as entidades extraídas para realizarmos análises descritivas e associativas.
+-- MAGIC
+-- MAGIC *Este notebook foi baseado no solution accelerator [Adverse Drug Events Detection](https://github.com/databricks-industry-solutions/adverse-drug-events). Para mais informações, visite https://www.databricks.com/solutions/accelerators/adverse-drug-event-detection.*
 
 -- COMMAND ----------
 
@@ -110,27 +134,6 @@
 -- MAGIC * outros ...
 -- MAGIC * outros ...
 -- MAGIC * outros ...
-
--- COMMAND ----------
-
--- MAGIC %md-sandbox
--- MAGIC # Identificação de Eventos Adversos
--- MAGIC
--- MAGIC <img src="https://www.databricks.com/en-website-assets/static/ddac5f0f20296db7ed3c559cdb727876/12369.png" style="float: right; padding-left: 10px" width=600>
--- MAGIC
--- MAGIC Para garantir a segurança contínua dos medicamentos, as empresas farmacêuticas precisam monitorar e relatar eventos adversos (ADE) após o lançamento no mercado. 
--- MAGIC
--- MAGIC Isso é desafiador, dado que a maioria dos eventos adversos são capturados em textos não-estruturados como emails, chamadas telefônicas e publicações em redes sociais. 
--- MAGIC
--- MAGIC * Extraia facilmente eventos adversos de grandes volumes de dados textuais com NLP
--- MAGIC * Classifique e correlacione automaticamente eventos adversos e entidades de drogas
--- MAGIC * Use visualizações integradas para avaliar a frequência dos eventos
--- MAGIC
--- MAGIC Neste notebook demonstramos a extração, processamento e análise de eventos adversos de medicamentos a partir de uma coleção de 20.000 conversas do mundo real usando processamento de linguagem natural (NLP) com modelos de Inteligência Artificial Generativa (GenAI).
--- MAGIC
--- MAGIC Então, nós armazenamos as entidades extraídas para realizarmos análises descritivas e associativas.
--- MAGIC
--- MAGIC *Este notebook foi baseado no solution accelerator [Adverse Drug Events Detection](https://github.com/databricks-industry-solutions/adverse-drug-events). Para mais informações, visite https://www.databricks.com/solutions/accelerators/adverse-drug-event-detection.*
 
 -- COMMAND ----------
 
@@ -178,6 +181,12 @@ select is_ADE, count(*) as from clinical_notes group by is_ADE
 
 -- COMMAND ----------
 
+-- MAGIC %md
+-- MAGIC
+-- MAGIC <img src="https://raw.githubusercontent.com/Databricks-BR/genai_hackathon/main/images/head_genai_foundation.png" width="900px">
+
+-- COMMAND ----------
+
 -- MAGIC %md-sandbox ### > Foundation Models
 -- MAGIC
 -- MAGIC <img src="https://docs.databricks.com/en/_images/serving-endpoints-list.png" style="float: right; padding-left: 10px" width=600>
@@ -211,6 +220,12 @@ select is_ADE, count(*) as from clinical_notes group by is_ADE
 -- MAGIC *Traduza para Português o texto a seguir (não adicione nenhum texto além da tradução):*
 -- MAGIC
 -- MAGIC *CONCLUSION: The administration of tissue plasminogen activator was responsible for the large extent of hemorrhage and should be considered in the differential diagnosis of hemorrhagic choroidal detachment.*
+
+-- COMMAND ----------
+
+-- MAGIC %md
+-- MAGIC <img src="https://raw.githubusercontent.com/Databricks-BR/genai_hackathon/main/images/head_genai_sql.png" width="900px">
+-- MAGIC
 
 -- COMMAND ----------
 
