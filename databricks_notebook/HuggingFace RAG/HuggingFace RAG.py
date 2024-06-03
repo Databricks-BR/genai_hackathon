@@ -166,7 +166,7 @@
 
 import pandas as pd
 
-pdf = spark.table("`br-genai-hackathon`.rag_mini.labelled_newscatcher").toPandas()
+pdf = spark.table("`br-genai-hackathon`.huggingface_rag.labelled_newscatcher").toPandas()
 
 pdf["id"] = pdf.index
 display(pdf)
