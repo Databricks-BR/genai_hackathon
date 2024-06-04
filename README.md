@@ -125,7 +125,7 @@ Esse arquivo deverá ser enviado, nesse mesmo horário, a equipe técnica presen
 
 ## MENTORES E PALESTRANTES
 
-<img src='https://github.com/Databricks-BR/genai_hackathon/raw/main/images/mentores.png' width='800px'></img>
+<img src='https://github.com/Databricks-BR/genai_hackathon/raw/main/images/mentores.png' width='850px'></img>
 
 Durante o evento, principalmente durante a construção e desenvolvimento da solução, os participantes poderão contar com o apoio técnico do time de especialistas da DATABRICKS.
 
