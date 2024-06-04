@@ -27,7 +27,7 @@ O Hackathon da DATABRICKS tem por objeto promover o conhecimento, integração e
 | -- | -- | -- |
 | 08:30  | Welcome Coffee |  Espaço para conhecer os participantes e começar a troca de ideias |
 | 09:00 | Palestra de Abertura | Boas-vindas e introdução aos objetivos do hackathon. |
-| 09:30 | Gen AI e Databricks | Apresentação detalhada sobre os conceitos de GenAi e a plataforma Databricks. |
+| 09:20 | Gen AI e Databricks | Apresentação detalhada sobre os conceitos de GenAi e a plataforma Databricks. |
 | 10:30 | Intervalo para Café | Networking e momento para Formação dos Grupos |
 | 11:00 | Material Hackathon | Apresentação das Regras e do material / aceleradores do Hackathon |
 | 12:00 | Almoço no Hilton | Almoço com os participantes e oportunidade de troca de ideias |
