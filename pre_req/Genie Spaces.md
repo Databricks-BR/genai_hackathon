@@ -1,8 +1,9 @@
 ![til](/images/head_genai_hackathon.gif)
 
-# Genie Spaces
+# Genie Spaces - Pré-requisitos
 
-A Genie Spaces está atualmente em public preview. Este caso de uso poderá ser escolhido somente se sua cloud é Azure ou AWS.
+* Este caso de uso poderá ser escolhido somente se sua cloud for Azure ou AWS.
+* O Unity Catalog precisa estar habilitado no Workspace. 
 
 # Verificando se a feature está habilitada
 
